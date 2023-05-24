@@ -1,6 +1,32 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import '../styles.css';
+import { Route, Routes } from "react-router-dom";
+import Signup from "./Signup"
+import Login from "./Login"
+import Diary from "./Diary"
+
+
+// function App() {
+//   return (
+//     <>
+    // <nav>
+    //   <ul>
+    //     <li><Link to="/api/signup">Signup</Link></li>
+    //     <li><Link to="/api/login">Login</Link></li>
+    //   </ul>
+    // </nav>
+      // <Routes>
+      //   <Route path="/api/signup" element={<Signup/>}/>
+      //   <Route path="/api/login" element={<Login/>}/>
+      //   <Route path="/diary" element={<Diary/>}/>
+      // </Routes>
+//     </>
+    
+//   )
+// }
+
+// export default App;
 
 class App extends Component {
   render() {
@@ -8,6 +34,11 @@ class App extends Component {
       <div  id="App">
         <h1>Calorie Tracker</h1>
         <Main/>
+        <Routes>
+          <Route path="/api/signup" element={<Signup/>}/>
+          <Route path="/api/login" element={<Login/>}/>
+          <Route path="/diary" element={<Diary/>}/>
+        </Routes>
       </div>
     )
   }
