@@ -1,0 +1,46 @@
+body {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#App {
+  /* background-color: red; */
+  outline: red solid 1px;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#Main {
+  /* background-color: red; */
+  outline: blue solid 1px;
+  padding: 20px;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#MealDisplay {
+  outline: green solid 1px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Totals {
+  outline: purple solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
